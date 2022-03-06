@@ -25,7 +25,7 @@ int main()
 	int n=sizeof(arr)/sizeof(arr[0]);
 	printArray(arr,n);
 	reverseArray(arr,0,n-1);
-	cout<<" Reversed arra is"<<endl;
+	cout<<" Reversed arr is"<<endl;
 	printArray(arr,n);
 	return 0;
 }
