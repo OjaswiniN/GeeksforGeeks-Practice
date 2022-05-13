@@ -1,5 +1,3 @@
-// Simple C++ program to find k'th smallest element
-
 int kthSmallest(int arr[], int n, int k)
 {
 	// Sort the given array
