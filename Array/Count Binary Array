@@ -13,6 +13,5 @@ int countOnes(int arr[], int N)
            }
        }
        return count;
-   
         
     }
