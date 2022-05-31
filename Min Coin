@@ -33,6 +33,7 @@ class Solution{
         }
     }
     return dp[n][x]==INT_MAX-1?-1:dp[n][x];
+  }
 
 	}
 };
