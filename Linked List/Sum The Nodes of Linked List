@@ -1,0 +1,11 @@
+int sumOfElements(Node *head)
+{
+   //Your code here
+    int sum=0;
+   
+    while(head!=NULL){ 
+        sum+=head->data;
+        head=head->next;
+    }
+    return sum;
+}
