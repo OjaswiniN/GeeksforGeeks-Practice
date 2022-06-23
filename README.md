@@ -1,2 +1,2 @@
 # GeeksforGeeks
-Related with programming
+Practice Questions and Solutions in C++
