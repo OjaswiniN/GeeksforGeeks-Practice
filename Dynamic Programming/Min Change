@@ -5,6 +5,7 @@
 using namespace std;
 
  // } Driver Code Ends
+ 
 class Solution{
 	public:
 	int MinCoin(vector<int>a, int x)
