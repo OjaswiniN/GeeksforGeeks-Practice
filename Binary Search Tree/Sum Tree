@@ -1,5 +1,3 @@
-
-// Should return true if tree is Sum Tree, else false
 class Solution
 {
     public:
