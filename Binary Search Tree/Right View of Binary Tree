@@ -1,10 +1,4 @@
-    Node(int x){
-        data = x;
-        left = right = NULL;
-    }
-}; */
 
-// Should return  right view of tree
 class Solution
 {
     public:
