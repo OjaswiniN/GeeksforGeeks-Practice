@@ -1,0 +1,63 @@
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+bool isPerfect(int N)
+{
+	if ((sqrt(N) - floor(sqrt(N))) != 0)
+		return false;
+	return true;
+}
+
+// Function to find the closest perfect square
+// taking minimum steps to reach from a number
+void getClosestPerfectSquare(int N)
+{
+	if (isPerfect(N)) {
+		cout << N << " "
+			<< "0" << endl;
+		return;
+	}
+	int aboveN = -1, belowN = -1;
+	int n1;
+	n1 = N + 1;
+	while (true) {
+		if (isPerfect(n1)) {
+			aboveN = n1;
+			break;
+		}
+		else
+			n1++;
+	}
+
+	// Finding first perfect square
+	// number less than N
+	n1 = N - 1;
+	while (true) {
+		if (isPerfect(n1)) {
+			belowN = n1;
+			break;
+		}
+		else
+			n1--;
+	}
+
+	// Variables to store the differences
+	int diff1 = aboveN - N;
+	int diff2 = N - belowN;
+
+	if (diff1 > diff2)
+		cout << belowN << " " << diff2;
+	else
+		cout << aboveN << " " << diff1;
+}
+
+// Driver code
+int main()
+{
+	int N = 1500;
+
+	getClosestPerfectSquare(N);
+}
+
