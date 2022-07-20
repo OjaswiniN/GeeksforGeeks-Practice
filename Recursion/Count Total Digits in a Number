@@ -1,0 +1,13 @@
+class Solution{
+  public:
+    int countDigits(int n)
+    {
+    // if n is less than 10 then count is 1
+    if(n<10)
+        return 1;
+    else 
+    // recursively count the digits of n
+        return 1+countDigits(n/10); 
+
+   }
+};
