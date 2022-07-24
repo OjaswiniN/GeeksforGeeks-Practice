@@ -1,0 +1,19 @@
+class Solution
+{
+    public:
+    //Function to calculate the longest consecutive ones
+    int maxConsecutiveOnes(int N)
+    {
+     
+        int count = 0;
+         while (N!=0)
+        {
+           //Assigning result of AND operation to N
+            N = (N & (N << 1));
+           //increement of counter variable.
+            count++;
+        }
+        //returning the answer.
+        return count;
+    }
+};
