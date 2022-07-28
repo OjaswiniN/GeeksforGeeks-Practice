@@ -1,0 +1,17 @@
+int countSmallerRight(int arr[], int n){
+    set<int> s;
+    int countSmaller = 0;
+    for(int i = n-1; i >= 0; i--){
+        s.insert(arr[i]);
+        
+        // find the first element that is lower than arr[i]
+        auto it = s.lower_bound(arr[i]);
+        
+        // Find the distance between above found element 
+        // and the beginning of the set using distance function
+        if(distance(s.begin(), it) > countSmaller)
+            countSmaller = distance(s.begin(), it);
+    }
+    
+    return countSmaller;
+}
