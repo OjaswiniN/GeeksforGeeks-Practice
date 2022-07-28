@@ -1,0 +1,24 @@
+bool findpairUtil(Node* root, int sum, unordered_set<int>& set) {
+    if (root == NULL) return false;
+
+    //calling function recursively for the left subtree.
+    if (findpairUtil(root->left, sum, set))
+        return true;
+    if (set.find(sum - root->data) != set.end()) 
+    {
+        return true;
+    } 
+    else
+        set.insert(root->data);
+    return findpairUtil(root->right, sum, set);
+}
+
+//Function to check if any pair exists in BST whose sum is equal to given value.
+bool findPair(Node* root, int sum) 
+{
+    unordered_set<int> set;
+    if (findpairUtil(root, sum, set))
+        return true;
+
+    return false;
+}
