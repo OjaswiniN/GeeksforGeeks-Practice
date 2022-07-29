@@ -12,7 +12,7 @@ class Solution
         if(m==n)
             return -1;
   
-        We do XOR operation on the numbers and return the rightmost set bit.
+       // XOR operation on the numbers and return the rightmost set bit.
         return getRightMostSetBit(m ^ n); 
     }
 
