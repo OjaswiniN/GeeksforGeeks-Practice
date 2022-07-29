@@ -1,13 +1,9 @@
 class Solution {
   public:
     string socialNetwork(int arr[], int N) {
-        
         string ans;
-        
         int mat[N+1][N+1];
-        
         memset(mat,0,sizeof(mat));
-        
         for(int i=2; i<=N; i++)
         {
             int x = arr[i-2];
@@ -18,7 +14,6 @@ class Solution {
                     mat[i][j] = mat[x][j] + 1;
             }
         }
-        
         for(int i=2; i<=N; i++)
             for(int j=1; j<=N; j++)
                 if(mat[i][j])
