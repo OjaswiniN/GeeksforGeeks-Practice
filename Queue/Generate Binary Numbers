@@ -1,0 +1,17 @@
+vector<string> generate(int N){
+    vector<string>ans;  
+	  queue<string>q;
+	  q.push("1");                    
+	
+	while(N--)                     
+	{
+		string s1=q.front();  //storing the front element of queue and popping it.
+		q.pop();
+		
+		ans.push_back(s1); //adding the popped element in answer.
+		string s2=s1;
+		q.push(s1.append("0")); 
+		q.push(s2.append("1"));
+	}
+	return ans;
+}
