@@ -1,0 +1,24 @@
+class Solution
+{   
+    public:     
+    void transpose(vector<vector<int> >& matrix, int n) 
+    { 
+        for (int i = 0; i < n; i++) 
+            for (int j = i; j < n; j++) 
+                //swapping elements at (i,j) and (j,i).
+                swap(matrix[i][j], matrix[j][i]); 
+    } 
+    void reverseColumns(vector<vector<int> >& matrix, int n) 
+    { 
+        for (int i = 0; i < n; i++) 
+            for (int j = 0, k = n - 1; j < k; j++, k--) 
+                //swapping elements in each column.
+                swap(matrix[j][i], matrix[k][i]); 
+    } 
+      
+    void rotateby90(vector<vector<int> >& matrix, int n) 
+    { 
+        transpose(matrix, n); 
+        reverseColumns(matrix, n); 
+    } 
+};
