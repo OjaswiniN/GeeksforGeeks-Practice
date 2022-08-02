@@ -1,7 +1,8 @@
- vector<int> subarraySum(int arr[], int n, long long s)
-    {
+class Solution {
+public:
+     vector<int> subarraySum(int arr[], int n, long long s){
         int i = 0, j = 0, sum = arr[0];
-       while(i < n) {
+         while(i < n) {
            if(sum == s) 
                return {i+1, j+1};
            
@@ -16,3 +17,4 @@
        } 
        return {-1};
    }
+};
