@@ -1,0 +1,22 @@
+class Solution{
+public:
+      bool findsum(int arr[], int N, int sum, int stn, int start){
+          if(start>N) return 0;
+          if(stn>sum) return 0;
+          if(stn==sum) return 1;
+          for (int i = start; i < N; i++){
+               if(stn+arr[i]<=sum){
+                  stn+=arr[i];
+                  if(findsum(arr, N, sum, stn,i+1)) return 1;
+                  stn-=arr[i]; }
+           }
+         return 0;
+}
+    int equalPartition(int N, int arr[])
+    {
+       int sum=0;
+        for(int i=0;i<N;i++) sum+=arr[i];
+        if(sum%2!=0) return 0;
+        return findsum(arr,N, sum/2,0,0);
+    }
+};
