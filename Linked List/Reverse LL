@@ -1,0 +1,23 @@
+class Solution{
+public:
+    struct Node* reverseList(struct Node *head){
+           if(head==NULL){
+           return NULL;
+       }
+       
+       Node*p = head;
+       Node*q = NULL;
+       Node*r = NULL;
+       
+       while(p){
+           r=q;
+           q=p;
+           p=p->next;
+           q->next = r;
+       }
+       head = q;
+       return head;
+    }  
+};
+    
+
