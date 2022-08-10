@@ -26,8 +26,6 @@ class Solution
         }
         res.push_back (arr[q.front()]);
         q.pop_front();
-        
-        //returning the list.
         return res;
     }
 };
