@@ -6,8 +6,7 @@ public:
            return 0;
        }
        int x;
-       if(!root->right && !root->left)
-       {
+       if(!root->right && !root->left){
            x = 0;
        }
        else
