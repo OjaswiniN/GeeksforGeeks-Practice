@@ -1,6 +1,5 @@
-class Solution
-{
-    public:
+class Solution {
+public:
       bool check = true;
       int sum(Node*root){
        if(root == NULL)
