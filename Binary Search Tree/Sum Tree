@@ -2,8 +2,7 @@ class Solution {
 public:
       bool check = true;
       int sum(Node*root){
-       if(root == NULL)
-       {
+       if(root == NULL){
            return 0;
        }
        int x;
