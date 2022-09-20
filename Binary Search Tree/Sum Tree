@@ -9,8 +9,7 @@ public:
        if(!root->right && !root->left){
            x = 0;
        }
-       else
-       {
+       else{
            x =sum(root->left) + sum(root->right);
            if(x != root->data) 
                check =false;
