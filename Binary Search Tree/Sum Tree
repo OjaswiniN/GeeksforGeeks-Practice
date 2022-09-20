@@ -21,8 +21,7 @@ class Solution
        return x +root->data;
    
    }
-    bool isSumTree(Node* root)
-    {
+    bool isSumTree(Node* root){
              sum(root);
         return check;
    
