@@ -15,10 +15,8 @@ public:
            if(x != root->data) 
                check =false;
        }
-       return x +root->data;
-   
-   }
-    bool isSumTree(Node* root){
+       return x +root->data; }
+     bool isSumTree(Node* root){
              sum(root);
         return check;
    
