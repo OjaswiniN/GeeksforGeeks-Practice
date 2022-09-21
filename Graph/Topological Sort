@@ -14,11 +14,11 @@ public:
                 q.push(i);
         }
     }
-    while(!q.empty()){
-        int node = q.front();
-        topo.push_back(node);
-        q.pop();
-        for(auto it: adj[node]){
+        while(!q.empty()){
+           int node = q.front();
+           topo.push_back(node);
+           q.pop();
+           for(auto it: adj[node]){
             indegree[it]--;
             if(indegree[it] == 0){
                 q.push(it);
