@@ -1,7 +1,6 @@
 class Solution{
 public:
-    void display(Node *head)
-    {
+    void display(Node *head){
       
    while (head!=NULL)
    {
