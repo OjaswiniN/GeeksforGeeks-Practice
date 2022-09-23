@@ -5,5 +5,4 @@ public:
        printf("%d ",head->data);
        head=head->next;
    }
-
-    }
+}
