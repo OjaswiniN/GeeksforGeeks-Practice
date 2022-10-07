@@ -1,6 +1,5 @@
 class Solution{
-public:
-        
+public:        
     double termOfGP(int A,int B,int N) {
         double r=((double)B)/A; 
         return (A*pow(r,N-1)); 
