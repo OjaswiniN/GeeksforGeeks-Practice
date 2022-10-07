@@ -6,6 +6,7 @@ public:
             //sum stores log(j) + log(j+1) + ... + log(N) 
             sum+=log10(j); 
         }
+        
         return(1+floor(sum));
     }
 };
