@@ -3,7 +3,6 @@ public:
     int count(int N){
         if(N%2!=0)
        return 0;
-       
        else if(N==0)
        return 1;
        
