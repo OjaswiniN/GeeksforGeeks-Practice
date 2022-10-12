@@ -10,7 +10,8 @@ public:
                r+=res;
                r+='.';
                 res="";
-           }else{
+           } 
+           else{
                res+=s[i];
            }
        }
